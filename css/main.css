@@ -62,15 +62,15 @@ footer {
   text-align: center;
 }
 
-.list{
+.list {
   display: flex;
 }
 
-dl dt{
+dl dt {
   font-weight: bold;
 }
 
-dl dd{
+dl dd {
   margin: 0;
   padding-left: .5em;
 }
@@ -114,7 +114,7 @@ dl dd{
   transform-origin: 0 1;
 }
 
-.buy:hover{
+.buy:hover {
   transform: scale(1.02);
   border: 2px solid black;
 }
@@ -124,18 +124,18 @@ dl dd{
   transform-origin: 0 1;
 }
 
-.photo:hover{
+.photo:hover {
   transform: scale(1.02);
   border: 2px solid black;
   border-radius: 10px;
 }
 
-.photo h3{
+.photo h3 {
   text-align: center;
   line-height: 0;
 }
 
-.photo p{
+.photo p {
   text-align: center;
   line-height: 15px;
   color: darkorange;
@@ -184,7 +184,7 @@ span {
       padding: 1em 0;
   } */
 
-  .second, .mid{
+  .second, .mid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: flex-start;
@@ -211,7 +211,7 @@ span {
     grid-column-gap: 1.5em;
   }
 
-  .second, .mid{
+  .second, .mid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: flex-start;
