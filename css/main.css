@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+,::before, ::after {
   box-sizing: inherit;
 }
 
@@ -12,22 +12,32 @@ html {
 
 body {
   margin: 0;
-  /* include your font family and default line-height */
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  / include your font family and default line-height /
 }
 
 img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.name h2 {
+  margin: 0;
 }
 
 header nav ul {
@@ -52,12 +62,111 @@ footer {
   text-align: center;
 }
 
+.list{
+  display: flex;
+}
 
-/* Default styling for all screens ends here */
+dl dt{
+  font-weight: bold;
+}
 
-/* Add media query for tablet */
+dl dd{
+  margin: 0;
+  padding-left: .5em;
+}
+
+.quote {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.quote p {
+  padding-top: 1em;
+}
+
+.first {
+  padding-top: 1em;
+}
+
+.twoimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+
+.fourth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5em;
+}
+
+.fourth h2 {
+  grid-column: 1/-1;
+}
+
+.buy {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+.common {
+  max-width:20em;
+}
 
 
 
+/* / Default styling for all screens ends here / */
 
-/* Add media query for desktop */
+/* / Add media query for tablet / */
+
+@media only screen and (min-width: 48em) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    grid-column-gap: 1em;
+  }
+
+ .mid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      grid-column-gap: 1em;
+      padding: 1em 0;
+  }
+
+  .blockquotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  .blockquotes h2 {
+    grid-column: 1/-1;
+  }
+
+/* / Add media query for desktop */
+
+@media only screen and (min-width: 70em) {
+  .fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1.5em;
+  }
+
+  .second, .mid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: flex-start;
+      grid-column-gap: 1em;
+      padding: 1em 0;
+  }
+
+}
