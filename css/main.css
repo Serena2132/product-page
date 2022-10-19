@@ -163,7 +163,6 @@ span {
 }
 
 
-
 /* / Default styling for all screens ends here / */
 
 /* / Add media query for tablet / */
@@ -176,15 +175,7 @@ span {
     grid-column-gap: 1em;
   }
 
- /* .mid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: flex-start;
-      grid-column-gap: 1em;
-      padding: 1em 0;
-  } */
-
-  .second, .mid {
+  .second{
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: flex-start;
