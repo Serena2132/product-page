@@ -16,7 +16,6 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   background-color: white;
-  / include your font family and default line-height /
 }
 
 img {
@@ -51,6 +50,7 @@ header nav ul li a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.25rem;
+  line-height: 1px;
 }
 
 header nav ul li a:hover,
@@ -77,11 +77,10 @@ dl dd{
 
 .quote {
   background-color: lightblue;
-  border-radius: 5px;
-}
-
-.quote p {
-  padding-top: 1em;
+  border-radius: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .first {
@@ -98,6 +97,7 @@ dl dd{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1.5em;
+  padding-bottom: 4em
 }
 
 .fourth h2 {
@@ -109,15 +109,57 @@ dl dd{
   border-radius: 5px;
   padding: 0.5em;
   text-align: center;
-  margin-bottom: 1em;
+  margin: 1em 0 1em;
+  transition: transform .4s ease-in-out;
+  transform-origin: 0 1;
+}
+
+.buy:hover{
+  transform: scale(1.02);
+  border: 2px solid black;
+}
+
+.photo {
+  transition: transform .4s ease-in-out;
+  transform-origin: 0 1;
+}
+
+.photo:hover{
+  transform: scale(1.02);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.photo h3{
+  text-align: center;
+  line-height: 0;
+}
+
+.photo p{
+  text-align: center;
+  line-height: 15px;
+  color: darkorange;
+}
+
+.buy a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
 }
 
 span {
   font-size: 1.5em;
+  color: darkorange;
 }
 
 .common {
-  max-width:20em;
+  max-width:30em;
+}
+
+.wrapper>h2{
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -134,13 +176,21 @@ span {
     grid-column-gap: 1em;
   }
 
- .mid {
+ /* .mid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: flex-start;
       grid-column-gap: 1em;
       padding: 1em 0;
-  }
+  } */
+
+  .second, .mid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      grid-column-gap: 1em;
+      padding: 1em 0;
+    }
 
   .blockquotes {
     display: grid;
@@ -168,5 +218,4 @@ span {
       grid-column-gap: 1em;
       padding: 1em 0;
   }
-
 }
